@@ -1,0 +1,46 @@
+.Container8-1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.img8{
+    margin-top: 5%;
+    margin-left: 230px;
+    width: 45%;
+    display: flex;
+}
+.textcontiner{
+    margin-right: 17%;
+}
+.heading{
+    margin-top: 19%;
+    margin-right: 40px;
+    padding-left: 5%;
+
+}
+.Points{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Point1-1, .Point2-1, .Point3-1{
+    margin-left: 100px;
+    margin-top: -50px;
+}
+.img8-1, .img8-2,.img8-3, .img8-4{
+    margin-left: 30px;
+}
+.Point4-1{
+    margin-left: 100px;
+    margin-top: -62px;
+}
+.Point1, .Point2, .Point3, .Point4{
+    padding: 2%;
+}
+.button1{
+    padding: 10%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+

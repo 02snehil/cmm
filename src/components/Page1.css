@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background-color: black;
+}
+
+.text-content {
+  margin-top: 5%;
+  width: 80%; 
+  text-align: center;
+}
+
+h1, p {
+  color: white;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 0px;
+}
+
+.spam {
+  display: block;
+  font-size: 2em;
+  margin-top: 0px;
+}
+
+p {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: rgba(152, 110, 235, 1);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.image1 {
+  width: 50%; 
+  margin-top: 0%;
+  height: 70%;
+}
+
+.image2 {
+  width: 90%; 
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-content {
+      width: 90%; /* Adjusted width for better responsiveness */
+  }
+
+  .image1, .image2, h1, p {
+      font-size: 1.5em; /* Adjusted font size for smaller screens */
+  }
+}

@@ -1,0 +1,90 @@
+.heading9 {
+    padding: 5%;
+    text-align: center;
+}
+
+.boxes1,
+.boxes2 {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review1,
+.review2,
+.review3,
+.review4,
+.review5,
+.review6 {
+    background-color: #ECE2FA;
+    border-radius: 20px;
+    align-items: start;
+    justify-content: start;
+    width: 90%;
+    max-width: 400px; /* Limit width for larger screens */
+    padding: 20px;
+    margin: 10px;
+}
+
+.review2,
+.review5 {
+    background-color: #2C2C31;
+    color: white;
+}
+
+.details1,
+.details2 {
+    display: flex;
+    flex-direction: row;
+    padding: 4%;
+    margin-top: 20px;
+}
+
+.intro1,
+.intro2,
+.intro3,
+.intro4,
+.intro5,
+.intro6 {
+    margin-left: -25px;
+    margin-top: -20px;
+    margin-bottom: -80px;
+}
+
+.intro2,
+.intro5 {
+    color: white;
+}
+
+.intro4,
+.intro5,
+.intro6 {
+    margin-top: -15px;
+    margin-left: -25px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .review1,
+    .review2,
+    .review3,
+    .review4,
+    .review5,
+    .review6 {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: none; /* Remove max-width for smaller screens */
+    }
+
+    .intro1,
+    .intro2,
+    .intro3,
+    .intro4,
+    .intro5,
+    .intro6 {
+        margin-left: 0;
+        margin-top: -10px;
+        margin-bottom: -40px;
+    }
+}

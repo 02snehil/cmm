@@ -1,0 +1,222 @@
+   
+ .footer{
+        position: absolute;
+        width: 2233.16px;
+        height: 1958.34px;
+        left: calc(50% - 2233.16px/2 + 0px);
+        top: calc(50% - 1958.34px/2);
+     }
+    
+
+    .fill {
+        position: absolute;
+        width: 2995.19px;
+        height: 1958.34px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .vector1 {
+        position: absolute;
+        left: 75.55%;
+        right: 0.11%;
+        top: 4.46%;
+        bottom: 54.53%;
+        background: linear-gradient(270deg, #0C0C0C -0.39%, rgba(6, 6, 6, 0) 99.98%);
+        transform: rotate(50deg);
+    }
+
+    .vector2{
+
+        position: absolute;
+        left: 84.27%;
+        right: -8.61%;
+        top: 2.14%;
+        bottom: 56.85%;
+        
+        background: linear-gradient(270deg, #0C0C0C -0.39%, rgba(6, 6, 6, 0) 99.98%);
+        transform: rotate(50deg);
+        }
+        
+    .vector3{
+        
+        position: absolute;
+        left: 78.13%;
+        right: -10.1%;
+        top: 16.98%;
+        bottom: 27.26%;
+        
+        background: linear-gradient(270deg, #0C0C0C -0.29%, rgba(6, 6, 6, 0) 99.98%);
+        transform: rotate(50deg);
+        }
+        
+    .vector4{
+        
+        position: absolute;
+        left: 78.6%;
+        right: -5.45%;
+        top: 39.8%;
+        bottom: 4.44%;
+        
+        background: linear-gradient(270deg, #0C0C0C -0.35%, rgba(6, 6, 6, 0) 99.98%);
+        transform: rotate(50deg);
+        }
+        
+    .vector5{
+        
+        position: absolute;
+        left: 67.63%;
+        right: 8.04%;
+        top: 17.49%;
+        bottom: 31.95%;
+        
+        background: linear-gradient(270deg, #0C0C0C -0.39%, rgba(6, 6, 6, 0) 99.98%);
+        transform: rotate(50deg);
+        }
+        
+        
+    .vector6{
+        
+        position: absolute;
+        left: 65.64%;
+        right: 10.03%;
+        top: 31.47%;
+        bottom: 17.97%;
+        
+        background: linear-gradient(270deg, #0C0C0C -0.39%, rgba(6, 6, 6, 0) 99.98%);
+        transform: rotate(50deg);
+        }
+        
+    .vector7{
+        
+        position: absolute;
+        left: 47.84%;
+        right: -1.72%;
+        top: 20.34%;
+        bottom: 29.09%;
+        
+        background: linear-gradient(270deg, #0C0C0C -0.17%, rgba(6, 6, 6, 0) 99.99%);
+        transform: rotate(50deg);
+        }
+        
+    .vector8{
+        
+        position: absolute;
+        left: 65.2%;
+        right: 10.47%;
+        top: 4.36%;
+        bottom: 46.33%;
+        
+        background: linear-gradient(270deg, #0C0C0C -0.39%, rgba(6, 6, 6, 0) 99.98%);
+        transform: rotate(50deg);
+        }
+        
+    .vector9{
+        
+        position: absolute;
+        left: 43.95%;
+        right: 31.72%;
+        top: 0.17%;
+        bottom: 58.82%;
+        
+        background: linear-gradient(270deg, #0C0C0C -0.39%, rgba(6, 6, 6, 0) 99.98%);
+        transform: rotate(50deg);
+        }
+        
+    .vector10{
+        
+        position: absolute;
+        left: 36.02%;
+        right: 39.64%;
+        top: 13.2%;
+        bottom: 36.24%;
+        
+        background: linear-gradient(270deg, #0C0C0C -0.39%, rgba(6, 6, 6, 0) 99.98%);
+        transform: rotate(50deg);
+        }
+        
+    .vector11{
+        
+        position: absolute;
+        left: 34.03%;
+        right: 41.64%;
+        top: 27.18%;
+        bottom: 22.26%;
+        
+        background: linear-gradient(270deg, #0C0C0C -0.39%, rgba(6, 6, 6, 0) 99.98%);
+        transform: rotate(50deg);
+        }
+        
+    .vector12{
+        
+        position: absolute;
+        left: 33.59%;
+        right: 42.08%;
+        top: 0.07%;
+        bottom: 58.92%;
+        
+        background: linear-gradient(270deg, #0C0C0C -0.39%, rgba(6, 6, 6, 0) 99.98%);
+        transform: rotate(50deg);
+        }
+        
+    .vector13{
+        
+        position: absolute;
+        left: 27.53%;
+        right: 65.01%;
+        top: 34.98%;
+        bottom: 57.88%;
+        
+        opacity: 0.6;
+        }
+        
+    .vector14{
+        
+        position: absolute;
+        left: 80.92%;
+        right: 11.82%;
+        top: 20.67%;
+        bottom: 69.26%;
+        
+        opacity: 0.2;
+        }
+        
+    .vector15{
+        
+        position: absolute;
+        left: 81.05%;
+        right: 11.69%;
+        top: 42.96%;
+        bottom: 46.97%;
+        
+        opacity: 0.6;
+        }
+
+    .vector16 {
+        position: absolute;
+        left: 23.57%;
+        right: 68.97%;
+        top: 66.28%;
+        bottom: 26.58%;
+        opacity: 0.6;
+    }
+
+  .home-hero-nav-blur{
+
+    position: absolute;
+    height: 268px;
+    left: 0%;
+    right: 0%;
+    top: -51px;
+    
+    background: #000000;
+    filter: blur(37.5px);
+    }
+
+    
+
+
+   
+
+
+

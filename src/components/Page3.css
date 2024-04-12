@@ -1,0 +1,13 @@
+.centered-img3 {
+    display: flex; 
+    margin: 0 auto; 
+    max-width: 60%; 
+    height: auto; 
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .centered-img3 {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}

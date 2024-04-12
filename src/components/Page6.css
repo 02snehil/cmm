@@ -1,0 +1,47 @@
+.container6 {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: black;
+    padding: 20px;
+}
+
+.heading6 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-gap: 20px; 
+    width: 80%; 
+}
+
+.box {
+    background-color: #252424;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+}
+
+.box img {
+    margin-right: 10px;
+    height: 50px; 
+    width: 50px; 
+}
+
+.box p {
+    text-align: start;
+    margin-left: 3%;
+}
+
+@media screen and (min-width: 768px) {
+    .box-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+    }
+}
