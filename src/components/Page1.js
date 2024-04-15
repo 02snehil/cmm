@@ -18,7 +18,7 @@ function Page1() {
                       <span style={{color:'rgb(236, 227, 128)'}}> that care </span>
                    </h1>
                    <h1>
-                     <span style={{color:'rgb(232, 112, 208)'}}> about your work</span> 
+                     <span style={{color:'rgb(232, 112, 208)'}}> about your work </span> 
                      more than your resume.
                    </h1>
                    <p>
