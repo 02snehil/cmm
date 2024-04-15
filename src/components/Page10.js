@@ -16,19 +16,19 @@ function Page10(){
                 <div className="AllReview">
                     <div className="reviews10">
                         <div className="content">
-                            <p style={{color:"black"}}><b>
+                            <h3 style={{color:"black"}}><b>
                              The Pesto Tech team is<br />
                              building something I’ve<br />
-                             personally wished existed<br />
+                             personally wished existed <br />
                              when I first started building<br />
                              software: An efficient way<br />
                              to hire high-quality<br />
                              engineers without the pain<br />
                              of trial and error.“</b>
-                            </p>
+                            </h3>
                             <br />
                             <h4 style={{color:"black"}}>Hiten Shah</h4>
-                            <p style={{color:"#494848",}}>Founder and CEO, Nira</p>
+                            <h4 style={{color:"#494848",}}>Founder and CEO, Nira</h4>
                         </div>
                         <div className="img">
                             <img src={img10_1} alt="img10_1" />

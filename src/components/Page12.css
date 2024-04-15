@@ -1,0 +1,61 @@
+.container12{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.text12{
+    display: flex;
+    flex-direction: row;
+}
+.heading{
+    margin-top: 10px ;
+    margin-left: 100px;
+}
+.paragraph{
+    color: aliceblue;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.button12{
+    background-color: rgba(253, 183, 134, 1);
+    width: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.image{
+    align-items: center;
+    padding: 10%;
+    margin-left: 150px;
+}
+@media screen and (max-width: 768px){
+    .container12{
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+        padding: 20px; 
+    }
+    .text12 {
+        flex-direction: column; /* Stack text and image vertically on smaller screens */
+        
+    }
+
+    .heading {
+        margin-left: 0px; /* Remove left margin for smaller screens */
+        text-align: justify; /* Center text horizontally */
+        font-size:1.em;
+    }
+
+    .paragraph {
+        margin-left: 15px; /* Remove left margin for smaller screens */
+        text-align: justify; /* Center text horizontally */
+        font-size: .8em;
+    }
+
+    .image {
+        margin-left: 0; /* Remove left margin for smaller screens */
+        padding: 0; /* Remove padding for smaller screens */
+        margin-top: 20px; /* Add some top margin for spacing */
+        width: 90%;
+    }
+}

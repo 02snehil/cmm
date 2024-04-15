@@ -73,7 +73,7 @@
     .review4,
     .review5,
     .review6 {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 80%; /* Adjust width for smaller screens */
         max-width: none; /* Remove max-width for smaller screens */
     }
 

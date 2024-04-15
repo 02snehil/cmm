@@ -13,8 +13,9 @@ function Page5(){
                  
             </div>
                <div className="div2">
-                  <div>
-                    <img src={group5} /></div>
+                   <div className='img'>
+                     <img src={group5} />
+                    </div>
                     <div className='div3'>
                         <p>"Pesto opened the door to a world of transformation and <br />
                             innovation for me. They taught me the power of <br />

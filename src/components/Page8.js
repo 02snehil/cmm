@@ -40,7 +40,7 @@ function Page8(){
                                 <img src={img8_2_3}  alt="img8_2_1" />
                             </div>
                             <div className="Point3-1">
-                                <h3 style={{color:'black'}}>Interview with our talent specialist</h3>
+                                <h3 style={{color:'black'}}>Interview with our talent specialist.</h3>
                             </div>
                         </div>
                         <div className="Point4">
@@ -48,12 +48,12 @@ function Page8(){
                                 <img src={img8_2_4}  alt="img8_2_1" />
                             </div>
                             <div className="Point4-1">
-                                <h3 style={{color:'black'}}>Get interviews with top product <br />companies</h3>
+                                <h3 style={{color:'black'}}>Get interviews with top product companies.</h3>
                             </div>
                         </div>
                     </div>
-                    <div className="button1">
-                        <button>Join Pestro Today </button>
+                    <div >
+                        <button className="button1">Join Pestro Today </button>
                     </div>
                 </div>
             </div>

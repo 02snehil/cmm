@@ -39,11 +39,18 @@ img {
 }
 
 @media (max-width: 768px) {
-    .heading {
+    .heading  {
         margin-top: 7%; 
+        text-align: center;
+        margin-left: 0px;
+    }
+    .img{
+        margin-left: -10px;
     }
 
-    .div3 p {
-        width: 110%; 
+    .div3  {
+        width: 100%; 
+        font-size: 0.45em;
+        margin-right: 10px;
     }
 }

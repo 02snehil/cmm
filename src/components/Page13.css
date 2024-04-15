@@ -1,0 +1,93 @@
+.container13{
+    background-color: rgba(72, 71, 71);
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+
+}
+.logos{
+    width: 50%;
+    display: flex;
+
+}
+.logo{
+    margin-left: -170px;
+    margin-top: 20px;
+}
+.companyName h6{
+    margin-top: -10px;
+}
+.hyperlinks img{
+    margin-right: 10px;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -100px;
+}
+.discription{
+    margin-left: 00px;
+    margin-top: 20px;
+}
+.details > div{
+    margin-right: 30px;
+}
+.content{
+    padding: 2%;
+}
+@media screen and (max-width: 768px) {
+    .container13 {
+        padding: 20px; /* Add padding for better spacing */
+        display: flex;
+        flex-direction: column;
+    }
+    .heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .logos {
+        width: 100%; /* Adjust width to full width on smaller screens */
+        flex-direction: column; /* Stack logos vertically on smaller screens */
+    }
+
+    .logo {
+        margin-left: 0; /* Remove left margin for smaller screens */
+        margin-top: 10px; /* Adjust top margin for smaller screens */
+    }
+
+    .discription {
+        margin-left: 0; /* Remove left margin for smaller screens */
+        margin-top: 10px; /* Adjust top margin for smaller screens */
+        font-size: .8em;
+    }
+
+    .details {
+        flex-direction: column; /* Stack details vertically on smaller screens */
+        margin-left: 10px; /* Remove left margin for smaller screens */
+        margin-top: 10px; /* Adjust top margin for smaller screens */
+        font-size: .5em;
+        text-align: left;
+        margin-right: -100px;
+    }
+
+    .details > div {
+        margin-right: 0; /* Remove right margin for smaller screens */
+        margin-bottom: 20px; /* Add bottom margin for spacing between sections */
+        
+    }
+
+    .content {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    .copyright{
+        font-size: .8em;
+    }
+}
+

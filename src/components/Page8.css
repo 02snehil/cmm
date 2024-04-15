@@ -1,21 +1,21 @@
 .Container8-1{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
 }
 .img8{
     margin-top: 5%;
-    margin-left: 230px;
+    margin-left: 100px;
     width: 45%;
     display: flex;
 }
 .textcontiner{
-    margin-right: 17%;
+    display: flex;
+    flex-direction: column;   
+    margin-top: 60px;
 }
 .heading{
-    margin-top: 19%;
-    margin-right: 40px;
-    padding-left: 5%;
+    margin-right: 100px;
 
 }
 .Points{
@@ -39,8 +39,65 @@
     padding: 2%;
 }
 .button1{
-    padding: 10%;
+    margin-top: 5% ;
+    margin-left: 10% ;
     border-radius: 10px;
     cursor: pointer;
+    width: 200px;
 }
+
+@media only screen and (max-width: 600px) {
+    .Container8-1 {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .img8 {
+        margin-left: 0; /* Remove left margin for smaller screens */
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    .textcontiner {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px; /* Adjust top margin for smaller screens */
+        text-align: justify; /* Center text horizontally */
+       
+    }
+    .Point1, .Point2, .Point3 , .Point4{
+        display: flex;
+        flex-direction:row;
+        text-align: center;
+    }
+
+    .Point1-1, .Point2-1, .Point3-1, .Point4-1 {
+        margin-left: 0; /* Remove left margin for smaller screens */
+        margin-top: 0px; /* Adjust top margin for smaller screens */
+    }
+
+    .img8-1, .img8-2, .img8-3, .img8-4 {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+
+    .Point1, .Point2, .Point3, .Point4 {
+        padding: 2%;
+        text-align: justify; /* Center text */
+        margin-left: 55px;
+    }
+
+    .button1 {
+        margin-top: 5%;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 200px;
+        margin-left: 58px;
+    }
+    .Points{
+        font-size: 0.5em;
+    }
+    .heading{
+        font-size: 1.1em;
+    }
+}
+
 
