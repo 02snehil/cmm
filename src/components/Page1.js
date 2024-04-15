@@ -29,9 +29,9 @@ function Page1() {
                       Average salaries of $80k+  <br /><br />For developers in
                    </p> <br></br>
                    <Router>
-                       <Link to="/"><button>Join Pesto today</button></Link>
+                       <Link to="/home"><button>Join Pesto today</button></Link>
                        <Routes>
-                           <Route path='/' element={<Home />}  />
+                           <Route path='/home' element={<Home />}  />
                        </Routes>
                    </Router>
                     <br></br>

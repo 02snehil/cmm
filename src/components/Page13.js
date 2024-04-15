@@ -5,7 +5,6 @@ import insta from './insta.png';
 import twit from './twit.png';
 import web from './web.png';
 import tube from './tube.png';
-import { Link } from "react-router-dom";
 
 
 function Page13(){
@@ -25,36 +24,44 @@ function Page13(){
                                     Hills Phase 2 Rd, Hyderabad, Telangana 500033</h6>
                              </div>
                              <div className="hyperlinks">
-                                <a href ='about' style={{textDecoration:'none'}}><img src={insta} alt="insta" /> </a>
-                                <a href ='about' style={{textDecoration:'none'}}><img src={web} alt="web" /></a>
-                                <a href ='about' style={{textDecoration:'none'}}><img src={twit} alt="twit" /></a>
-                                <a href ='about' style={{textDecoration:'none'}}><img src={tube} alt="tube" /></a>
+                                <a href ='https://www.instagram.com/pesto.tech/' target="_blank" style={{textDecoration:'none'}}><img src={insta} alt="insta" /> </a>
+                                <a href ='https://www.linkedin.com/company/pestotech/' target="_blank"  style={{textDecoration:'none'}}><img src={web} alt="web" /></a>
+                                <a href ='https://twitter.com/i/flow/login?redirect_after_login=%2Fpestotech'  target="_blank" style={{textDecoration:'none'}}><img src={twit} alt="twit" /></a>
+                                <a href ='https://www.youtube.com/channel/UCvf05jYQKovPknZISmeVTdw' target="_blank" style={{textDecoration:'none'}}><img src={tube} alt="tube" /></a>
                              </div>
                          </div>
                      </div>
                      <div className="details">
                         <div className="company">
                             <h3>
-                                <span style={{color:'white'}}>Company</span><br /> 
-                                 <a href="about" style={{textDecoration: 'none', color:"black"}}>About us</a> <br /> 
-                                 <a href="about" style={{textDecoration: 'none', color:"black"}}>Blog </a> <br /> 
-                                 <a href="about" style={{textDecoration: 'none', color:"black"}}>Home</a>
-                            </h3> 
+                                <span style={{color:'#E6E6E6'}}>Company</span><br /> 
+                            </h3>
+                            <h4>    
+                                 <a href='/aboutus' target="_blank"  style={{textDecoration: 'none', color:"rgb(240,248,255)"}}>About us</a> <br /> <br /> 
+                                 <a href="/blog" style={{textDecoration: 'none', color:"rgb(240,248,255)"}}>Blog </a> <br /> <br /> 
+                                 <a href="/home" style={{textDecoration: 'none', color:"rgb(240,248,255)"}}>Home</a>
+                            </h4> 
                         </div>
                         <div className="legal">
                             <h3>
                                 <span style={{color:'white'}}>Legal</span><br />
-                                <a href="about" style={{textDecoration: 'none', color:"black"}}>Terms of Use</a> <br /> 
-                                <a href="about" style={{textDecoration: 'none', color:"black"}}>Privacy Policy</a> <br /> 
-                                <a href="about" style={{textDecoration: 'none', color:"black"}}>Refund Policy</a>
-                            </h3>
+                            </h3>    
+                            <h4 style={{textDecoration: 'none', color:"rgb(240,248,255)"}} >
+                                <a href="/terms" style={{textDecoration: 'none', color:"rgb(240,248,255)"}} >Terms of Use</a> <br /> <br /> 
+                                <a href="/privicy" style={{textDecoration: 'none', color:"rgb(240,248,255)"}}>Privacy Policy</a> <br /> <br /> 
+                                <a href="/refund" style={{textDecoration: 'none', color:"rgb(240,248,255)"}}>Refund Policy</a>
+                            </h4>
+                            
                         </div>
                         <div className="support">
-                            <h3 >
-                                <span style={{color:'white'}}>Support</span><br />
-                                <a href="about" style={{textDecoration: 'none', color:"black"}}>contact@Credmarg.com </a><br /> 8341666036 <br /> 
-                                <a href="about" style={{textDecoration: 'none', color:"black"}}>delete My Account</a>
+                            <h3 style={{color:'white'}}>
+                              Support<br />
                             </h3>
+                            <h4 style={{textDecoration: 'none', color:"white"}}>    
+                                <a href="about" style={{textDecoration: 'none', color:"rgb(240,248,255)"}}>contact@Credmarg.com </a><br /><br /> 
+                                  8341666036 <br /> <br /> 
+                                <a href="/delete"style={{textDecoration: 'none', color:"rgb(240,248,255)"}} >delete My Account</a>
+                            </h4>
                         </div>
                      </div>
                  </div>
@@ -83,7 +90,8 @@ function Page13(){
                      </p>
                  </div>
               </div>
-        </>
+ 
+        </> 
     );
 }
 export default Page13;
