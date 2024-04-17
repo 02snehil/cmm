@@ -2,9 +2,7 @@ import React from 'react';
 import './Page1.css';
 import group1 from './group1.png';
 import group1_1 from './group1_1.png';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-// import { useHistory } from 'react-router-dom';
-import Home from './Home';
+
 
 
 function Page1() {
@@ -28,12 +26,7 @@ function Page1() {
                    <p>
                       Average salaries of $80k+  <br /><br />For developers in
                    </p> <br></br>
-                   <Router>
-                       <Link to="/home"><button>Join Pesto today</button></Link>
-                       <Routes>
-                           <Route path='/home' element={<Home />}  />
-                       </Routes>
-                   </Router>
+                    <a href='/register'><button>Join Pesto today</button></a>
                     <br></br>
                    <img src={group1} alt='Group1' className='image1'/>
                    <img src={group1_1} alt='Group1_1' className='image2'/>

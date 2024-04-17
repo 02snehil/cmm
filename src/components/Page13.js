@@ -24,10 +24,10 @@ function Page13(){
                                     Hills Phase 2 Rd, Hyderabad, Telangana 500033</h6>
                              </div>
                              <div className="hyperlinks">
-                                <a href ='https://www.instagram.com/pesto.tech/' target="_blank" style={{textDecoration:'none'}}><img src={insta} alt="insta" /> </a>
-                                <a href ='https://www.linkedin.com/company/pestotech/' target="_blank"  style={{textDecoration:'none'}}><img src={web} alt="web" /></a>
-                                <a href ='https://twitter.com/i/flow/login?redirect_after_login=%2Fpestotech'  target="_blank" style={{textDecoration:'none'}}><img src={twit} alt="twit" /></a>
-                                <a href ='https://www.youtube.com/channel/UCvf05jYQKovPknZISmeVTdw' target="_blank" style={{textDecoration:'none'}}><img src={tube} alt="tube" /></a>
+                                <a href ='https://www.instagram.com/pesto.tech/' target="_blank" rel="noreferrer" style={{textDecoration:'none'}}><img src={insta} alt="insta" /> </a>
+                                <a href ='https://www.linkedin.com/company/pestotech/' target="_blank" rel="noreferrer"  style={{textDecoration:'none'}}><img src={web} alt="web" /></a>
+                                <a href ='https://twitter.com/i/flow/login?redirect_after_login=%2Fpestotech'  target="_blank" rel="noreferrer" style={{textDecoration:'none'}}><img src={twit} alt="twit" /></a>
+                                <a href ='https://www.youtube.com/channel/UCvf05jYQKovPknZISmeVTdw' target="_blank" rel="noreferrer" style={{textDecoration:'none'}}><img src={tube} alt="tube" /></a>
                              </div>
                          </div>
                      </div>

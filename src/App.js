@@ -1,37 +1,27 @@
 import React from 'react';
-import Page1 from './components/Page1';
-import Page2 from './components/Page2';
-import Page3 from './components/Page3';
-import Page4 from './components/Page4';
-import Page5 from './components/Page5';
-import Page6 from './components/Page6';
-import Page7 from './components/Page7';
-import Page8 from './components/Page8';
-import Page9 from './components/Page9';
-import Page11 from './components/Page11';
-import Page12 from './components/Page12';
-import Page13 from './components/Page13';
-import Page10 from './components/Page10';
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Main from './components/Main';
+import AboutUs from './components/AboutUs';
+import Blog from './components/Blog';
+import Home from './components/Home';
+import Login from './components/Login';
+import Register from './components/Register';
+import Welcome from './components/Welcome';
 
 function App() {
   return (
-    <>
-    <Page1 />
-    <Page2 />
-    <Page3 />
-    <Page4 />
-    <Page5 />
-    <Page6 />
-    <Page7 />
-    <Page8 />
-    <Page9 />
-    <Page10 />
-    <Page11 />
-    <Page12 />
-    <Page13 />
-    </>
+    <Router>
+      <Routes>
+         <Route path='/' element={<Main />} />
+         <Route path='/home' element={<Home />} />
+         <Route path='/aboutus' element={<AboutUs />} />
+         <Route path='/blog' element={<Blog />} />
+         <Route path='/register' element={<Register />} />
+         <Route path='/login' element={<Login />} />
+         <Route path='/welcome' element={<Welcome />} />
+         <Route path='*' element={<h1 style={{color:'black'}}> PAGE NOT FOUND</h1>} />
+      </Routes>
+    </Router>
   );
 }
-
 export default App;
