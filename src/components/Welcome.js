@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import { auth } from './firebase';
 
 function Welcome() {
-  const navigate = useNavigate(); // Add this line to get the navigate function
+
+  const navigate = useNavigate(); 
 
   const email = localStorage.getItem('email');
 
   useEffect(() => {
     const handleBeforeUnload = (event) => {
-      // Clear the browser history when the user tries to navigate away
       localStorage.removeItem('email');
     };
 
@@ -31,9 +31,11 @@ function Welcome() {
     });
   };
 
+  const location=useLocation();
+
   return (
     <div>
-      <h2>Welcome, {email}!</h2>
+      <h2>Welcome, {location.state.id}!</h2>
       <h4>This is your dashboard.</h4>
       <button onClick={handleLogout}>Logout</button>
     </div>

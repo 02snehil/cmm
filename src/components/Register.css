@@ -48,7 +48,7 @@ b{
     border-radius: 10px;
     border: 1px solid #FFFAF2;
     width: 130%;
-    height: 7%;
+    height: 35px;
 }
 
 .registerB{
@@ -58,6 +58,7 @@ b{
     background-color: rgba(23, 14, 4, 0.844);
     color: #f9f4ea;
     font-size: 1.15em;
+    margin-top: 10px;
 
 }
 .hr2,.hr3 {
@@ -76,7 +77,7 @@ b{
 
 .or-container {
     display: flex;
-    margin-top: 10px;
+    margin-top: -15px;
     margin-left:140px;
 }
 
@@ -97,7 +98,7 @@ b{
     width: 350px;
     margin-bottom: 10px;
     margin-left: 820px;
-    margin-top: -98px;
+    margin-top: 0px;
     columns: #0e0d0d;
     font-weight: 500;
     font-size: 1em;
@@ -114,6 +115,11 @@ b{
 }
 .register_link{
     margin-left: 900px;
+    margin-top: 5px;
+
+}
+.authentication{
+margin-top: 20px;
 }
 @media only screen and (max-width: 767px) {
     .container_Register {
@@ -126,7 +132,7 @@ b{
       display: none; 
     }
     .buttonregister {
-      width: 75%; 
+      width: 257px; 
       margin-top: 0px;
       margin-left: 40px;
     }

@@ -7,6 +7,7 @@ import google_icon from './google_icon.jpg';
 import { signInAnonymously, signInWithPhoneNumber, sendEmailVerification, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { provider, auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 
 function Login() {
@@ -56,6 +57,39 @@ function Login() {
             window.removeEventListener('popstate', handlePopState);
         };
     }, [navigate]);
+
+
+    const [email,setEmail]=useState('')
+    const [password,setPassword]=useState('')
+
+    async function submit(e){
+        e.preventDefault();
+
+        try{
+
+            await axios.post("http://localhost:8000/login",{
+                email,password
+            })   
+            .then(res=>{
+                if(res.data === "login successfull"){
+                     navigate("/welcome ",{state:{id:email}})
+                }
+                else if(res.data === "login fail"){
+                    alert("Email does not exixt")
+               }
+            })  
+            .catch(e=>{
+                alert("wrong details")
+                console.log(e);
+            })
+        }
+        catch(e){
+            console.log(e);
+        
+        }
+
+        
+    }
 
 
 
@@ -143,27 +177,45 @@ function Login() {
                           <p className="p1"> <b>Welcome Back</b></p>
                           <p className="p2">Login to continue learning</p><br />
                         </div>
-                        <div className="fill_details">
-                            <div className="signin">
-                               Sign in as
-                            </div>
-                            <div className="developer">
-                                <input type="radio" name="login" />&emsp;Developer
-                            </div>
-                            <div className="Hiring">
-                              <input type="radio" name="login" />&emsp;Hiring Partner
-                            </div>
-                        </div>
-                        <div className="email_login">
-                             Email <br />
-                             <input type="email" name="email" required className="email"/> <br />
-                             <button  type="submit" className="login_button">Next</button>                           
-                        </div>
-                        <div className="or-container_login">
-                           <hr className="hr2_login" />
-                           <div className="or-text_login">or</div>
-                           <hr className="hr3_login" />
-                        </div>
+                        <form action="POST">
+                           <div className="fill_details">
+                              <div className="signin">
+                                 Sign in as
+                              </div>
+                              <div className="developer">
+                                 <input type="radio" name="login" required/>&emsp;Developer
+                              </div>
+                              <div className="Hiring">
+                                 <input type="radio" name="login" required />&emsp;Hiring Partner
+                              </div>
+                           </div>
+                           <div className="email_login">
+                               Email <br />
+                               <input type="email" 
+                                 onChange={(e)=>{setEmail(e.target.value)}}
+                                 name="email" 
+                                 required 
+                                 className="input_login"/> <br /><br />
+
+                               Password <br />
+                               <input type ="password" 
+                                 onChange={(e)=>{setPassword(e.target.value)}}
+                                 name ="password" 
+                                 required 
+                                 className ="input_login " />
+                               
+                               <button  type="submit" 
+                                 onClick={submit}
+                                 className="login_button">
+                                 Next
+                               </button>                           
+                           </div>
+                        </form>   
+                           <div className="or-container_login">
+                             <hr className="hr2_login" />
+                             <div className="or-text_login">or</div>
+                             <hr className="hr3_login" />
+                          </div> 
                        <br /> 
                    </div>
                </div>

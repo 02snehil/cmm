@@ -6,6 +6,7 @@ import './Register.css';
 import { useNavigate } from "react-router-dom";
 import { signInWithPopup } from "firebase/auth";
 import { auth, provider } from "./firebase";
+import axios from "axios";
 
 function Register(){
 
@@ -56,6 +57,46 @@ function Register(){
     }, [navigate]);
 
 
+    const [phone,setPhone]=useState('')
+    const [uname,setUname]=useState('')
+    const [email,setEmail]=useState('')
+    const [password,setPassword]=useState('')
+    const [r_password,setR_password]=useState('')
+
+    async function register(e){
+        e.preventDefault();
+
+        try{
+
+            await axios.post("http://localhost:8000/register",{
+                phone,uname,email,password,r_password
+            })  
+            .then(res=>{
+                if(res.data === "The detail you have given that detail user is there"){
+                  
+                    alert("user already exixt")
+                }
+                else if(res.data === "good to go for registration"){
+                    navigate("/welcome ",{state:{id:uname}})
+               }
+            })  
+            .catch(e=>{
+                 alert("wrong details")
+                 console.log(e);
+            })   
+        }
+        catch(e){
+            console.log(e);
+        
+        }
+
+        
+    }
+
+
+
+
+
     return(
         <>
           <div className="register">
@@ -72,14 +113,45 @@ function Register(){
                    <p className="p1"> <b>Create an account</b></p>
                    <p className="p2">Please enter your details</p>
                    <br />
+                   <form action="POST">
+                      <b>Phone Number*</b> <br /><br />
+                      <input type = "number"
+                         onChange={(e)=>{setPhone(e.target.value)}} 
+                         name="phone" required  
+                         className="input"/> <br /><br />
 
-                   <b>Phone Number*</b> <br /><br />
-                   <input type = "number" name="mob"  className="input"/> <br /><br />
-                   <b>Name</b> <br /><br />
-                   <input type = "text" name="name" className="input" /> <br /><br />
-                   <b>Email</b> <br /><br />
-                   <input type = "email" name="email" className="input" /> <br /><br />
-                   <button className="registerB"> Submit </button>
+                      <b>Name</b> <br /><br />
+                      <input type = "text" 
+                         onChange={(e)=>{setUname(e.target.value)}} 
+                         name="uname" 
+                         required 
+                         className="input" /> <br /><br />
+
+                      <b>Email</b> <br /><br />
+                      <input type = "email" 
+                         onChange={(e)=>{setEmail(e.target.value)}} 
+                         name="email" 
+                         required 
+                         className="input" /> <br /><br />
+
+                      <b>Password</b> <br /><br />
+                      <input type = "password" 
+                         onChange={(e)=>{setPassword(e.target.value)}} 
+                         name="password" 
+                         required 
+                         className="input" /> <br /><br />
+
+                      <b>Re-enter Password</b> <br /><br />
+                      <input type = "password" 
+                         onChange={(e)=>{setR_password(e.target.value)}} 
+                         name="r_password" 
+                         required 
+                         className="input" /> <br /><br />
+                      <button type="submit" 
+                         onClick={register}
+                         className="registerB"> Submit 
+                      </button>
+                   </form>
                    <br /><br />
                    <div className="or-container">
                         <hr className="hr2" />

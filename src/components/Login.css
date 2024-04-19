@@ -63,12 +63,12 @@
 .email_login{
     margin-top: 30px;
 }
-.email{
+.input_login{
     background-color: #FFFAF2;
     border-radius: 10px;
     border: 1px solid #FFFAF2;
     width: 95%;
-    height: 40%;
+    height: 35px;
     margin-top: 9px;
 }
 .login_button{
@@ -82,7 +82,7 @@
 }
 .or-container_login{
     display: flex;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-left:140px;
 }
 .hr2_login,.hr3_login {
@@ -114,8 +114,8 @@
     border: 1px solid #E5E0D7;
     width: 390px;
     margin-bottom: 10px;
-    margin-left: 860px;
-    margin-top: -50px;
+    margin-left: 865px;
+    margin-top: -5px;
     columns: #0e0d0d;
     font-weight: 500;
     font-size: 1em;
@@ -131,6 +131,7 @@
 }
 .login_link{
     margin-left: 950px;
+    margin-top: 5px;
 }
   
   /* For mobile devices */
@@ -160,8 +161,8 @@
       margin-left: 40px;
     }
     .buttonlogin {
-      width: 80%; 
-      margin-left: 40px;
+      width: 82%; 
+      margin-left: 38px;
       margin-top: -6px;
     }
     .or-container_login{
@@ -178,5 +179,6 @@
     .heading_login{
         margin-left: -65px;
     }
+    
   }
   
